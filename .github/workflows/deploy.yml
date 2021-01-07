@@ -1,0 +1,17 @@
+name: Build, Release and Firebase Hosting
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  release:
+    name: Build and release
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Show hello
+        run: echo "Hello wold"
