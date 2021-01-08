@@ -1,8 +1,10 @@
 name: Build, Release and Firebase Hosting
 
 on:
-  push:
-    branches: [main]
+  # push:
+  #   branches: [main]
+  release:
+    types: [published]
 
 jobs:
   release:
